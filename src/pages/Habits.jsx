@@ -88,7 +88,7 @@ export function Habits() {
                 </div>
 
                 {/* 30-Day Heatmap Grid */}
-                <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', gap: '4px', overflowX: 'auto', padding: '0 1rem' }}>
+                <div className="no-scrollbar" style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', gap: '4px', overflowX: 'auto', padding: '0 1rem' }}>
                   {last30Days.map(dateStr => {
                     const done = isCompleted(habit.id, dateStr);
                     return (

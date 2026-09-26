@@ -39,6 +39,39 @@ body {
 .font-serif { font-family: var(--font-serif); }
 .font-mono { font-family: var(--font-mono); }
 
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #222 transparent;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /* --- App Layout & Sidebar --- */
 .app-container {
   display: flex;

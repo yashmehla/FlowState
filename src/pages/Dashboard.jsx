@@ -85,7 +85,7 @@ export function Dashboard() {
         <h2 style={{ fontSize: '1.1rem', color: '#fff', display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem' }}>
           <Activity size={18} style={{ color: '#ffffff' }} /> 30-Day Productivity Score
         </h2>
-        <div style={{ display: 'flex', gap: '4px', overflowX: 'auto', paddingBottom: '0.5rem' }}>
+        <div className="no-scrollbar" style={{ display: 'flex', gap: '4px', overflowX: 'auto' }}>
           {heatmap.map((day) => (
             <div 
               key={day.dateStr}
